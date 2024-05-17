@@ -1,5 +1,3 @@
-Certainly! Here's your content paraphrased and formatted in Markdown:
-
 ```markdown
 # Script 1: Automated Markdown File Creation
 
