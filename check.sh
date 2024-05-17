@@ -5,8 +5,8 @@ filename="MyThirdBlogPost.md"
 
 # Check if the specified file exists
 if [ ! -e "$filename" ]; then
-		    echo "File '$filename' does not exist. Aborting."
-		    	        exit 1
+	    echo "File '$filename' does not exist. Aborting."
+	        exit 1
 fi
 
 # Define the command to check the file for spelling errors using aspell
@@ -18,10 +18,10 @@ spell_errors=$(eval $spell_check_command)
 
 # Check if there are any spelling errors
 if [ -z "$spell_errors" ]; then
-		    echo "No spelling errors found in '$filename'."
-		        else
-					        echo "Spelling errors found in '$filename':"
-								    echo "$spell_errors"
+	    echo "No spelling errors found in '$filename'."
+    else
+	        echo "Spelling errors found in '$filename':"
+		    echo "$spell_errors"
 fi
 
 # Define a sed command to automate text formatting (e.g., converting to title case)
