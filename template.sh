@@ -2,8 +2,8 @@
 
 # Check if an argument is provided (i.e., the new filename)
 if [ $# -eq 0 ]; then
-		  echo "Usage: $0 <filename>"
-		  	    exit 1
+	  echo "Usage: $0 <filename>"
+	    exit 1
 fi
 
 # Define the filename from the script's first argument
@@ -12,8 +12,8 @@ title="Optimizing Administrative Workflows: ChatGPT as Your Virtual Assistant"
 
 # Check if the file already exists, and if it does, exit
 if [ -e "$filename" ]; then
-		  echo "File '$filename' already exists. Aborting."
-		  	    exit 1
+	  echo "File '$filename' already exists. Aborting."
+	    exit 1
 fi
 
 # Create the Markdown file and add the template
